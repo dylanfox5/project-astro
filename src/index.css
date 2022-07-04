@@ -19,7 +19,7 @@ body {
   color: var(--green) !important;
 }
 
-.Home {
+.home {
   min-height: 90vh;
   display: flex;
   flex-direction: column;

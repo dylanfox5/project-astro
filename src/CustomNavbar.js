@@ -10,9 +10,9 @@ function CustomNavbar() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav navbarScroll>
-                        <Nav.Link className="nav-item" href="#">link</Nav.Link>
-                        <Nav.Link className="nav-item" href="#">link</Nav.Link>
-                        <Nav.Link className="nav-item" href="#">link</Nav.Link>
+                        <Nav.Link className="nav-item" href="#">post</Nav.Link>
+                        <Nav.Link className="nav-item" href="#">feed</Nav.Link>
+                        <Nav.Link className="nav-item" href="#">login</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
