@@ -15,10 +15,6 @@ body {
   font-size: 125%;
 }
 
-.nav-item:hover {
-  color: var(--green) !important;
-}
-
 .home {
   min-height: 90vh;
   display: flex;
@@ -27,6 +23,11 @@ body {
   justify-content: center;
 }
 
-span {
-  color: var(--green);
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  color: grey;
 }
