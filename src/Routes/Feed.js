@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card'
 
-function App() {
+function Feed() {
     const [posts, setPosts] = useState([
         { title: 'Lorem ipsum dolor', body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam enim lectus, porttitor nec orci ornare, posuere porta leo. Praesent aliquam nibh eget porta vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam enim lectus, porttitor nec orci ornare, posuere porta leo.", author: "Luigi", id: 1 },
         { title: 'Lorem ipsum dolor', body: "lorem ipsum...", author: "Yoshi", id: 2 },
@@ -57,4 +57,4 @@ function App() {
     );
 }
 
-export default App;
+export default Feed;

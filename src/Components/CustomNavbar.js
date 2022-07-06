@@ -12,7 +12,7 @@ function CustomNavbar() {
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav navbarScroll>
                         <Nav.Link className="nav-item" href="#">
-                            <Link to="/" className="link">profile</Link>
+                            <Link to="/profile" className="link">profile</Link>
                         </Nav.Link>
                         <Nav.Link className="nav-item" href="#">
                             <Link to="/feed" className="link">feed</Link>
