@@ -58,3 +58,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.post-form {
+  min-width: 50vw !important;
+}
