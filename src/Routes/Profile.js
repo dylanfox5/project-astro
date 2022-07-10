@@ -8,10 +8,10 @@ import Col from 'react-bootstrap/Col';
 function Profile() {
 
     return (
-        <div className="App">
+        <div>
             <CustomNavbar />
             <div className="content">
-                <Container className="feed">
+                <Container className="profile animate__animated animate__fadeInLeft animate__delay-1s">
                     <Row>
                         <Col sm={12} lg={12}>
                             <h1>profile</h1>

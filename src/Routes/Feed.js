@@ -16,21 +16,12 @@ function Feed() {
     ]);
 
     return (
-        <div className="App">
+        <div>
             <CustomNavbar />
             <div className="content">
                 <Container className="feed">
                     <Row>
                         <Col sm={12} lg={12}>
-                            {/* <div className="animate__animated animate__fadeIn animate__delay-1s">
-                                {posts.map((post) => (
-                                    <div className="post" key={post.id}>
-                                        <h2>{post.title}</h2>
-                                        <p>{post.author}</p>
-                                        <p>{post.body}</p>
-                                    </div>
-                                ))}
-                            </div> */}
                             {posts.map((post) => (
                                 <Card className="post animate__animated animate__fadeIn animate__delay-1s" key={post.id}>
                                     <Card.Body>
