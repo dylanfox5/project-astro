@@ -7,7 +7,29 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
 
+import { useState } from 'react';
+import { ps } from '../global';
+
 function Profile() {
+
+    const [post, setPost] = useState('');
+
+    const handlePostChange = event => {
+        setPost(event.target.value);
+    }
+
+    const handlePostClick = event => {
+        event.preventDefault();
+
+        ps.push({
+            title: 'title',
+            body: post,
+            author: 'you',
+            id: 6
+        });
+
+        setPost('');
+    }
 
     return (
         <div>
@@ -22,13 +44,15 @@ function Profile() {
                                 as="textarea"
                                 placeholder="How can we pray for you today?"
                                 aria-label="With textarea"
+                                value={post}
+                                onChange={handlePostChange}
                                 />
                             </InputGroup>
                         </Col>
                     </Row>
                     <Row className="mt-2">
                         <Col sm={12} lg={12}>
-                            <Button variant="primary">Post</Button>{' '}
+                            <Button variant="primary" onClick={handlePostClick}>Post</Button>{' '}
                         </Col>
                     </Row>
                 </Container>
