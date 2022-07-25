@@ -1,15 +1,20 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useState } from 'react';
 import CustomNavbar from '../Components/CustomNavbar';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card'
 
+import { useState, useEffect } from 'react';
 import { ps } from '../global';
 
 function Feed() {
-    const [posts, setPosts] = useState(ps);
+    const [posts, setPosts] = useState(null);
+
+    useEffect(() => {
+        fetch("/api").then((res) => res.json()).then((data) => setPosts(data));
+    }, []);
+    
 
     return (
         <div>

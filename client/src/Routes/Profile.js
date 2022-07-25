@@ -38,6 +38,11 @@ function Profile() {
                 <Container className="profile animate__animated animate__fadeIn animate__delay-2s">
                     <Row>
                         <Col sm={12} lg={12}>
+                            <h1>Profile</h1>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col sm={12} lg={12}>
                             <InputGroup>
                                 <Form.Control
                                 className="post-form"
